@@ -10,8 +10,5 @@ COPY . .
 # Step 4: Install dependencies
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Step 5: Install Tkinter for GUI support
-RUN apt-get update && apt-get install -y python3-tk
-
-# Step 6: Run the GUI application
-CMD ["python", "main.py"]
+# Step 5: Run the CLI application
+CMD ["python", "cli.py"]
